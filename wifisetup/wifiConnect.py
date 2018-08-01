@@ -32,6 +32,7 @@ wifiSSID = sys.argv[1]
 wifiPSK = sys.argv[2]
 wifiType = sys.argv[3]
 countryCode = sys.argv[4]
+waitForNetwork = sys.argv[5]
 
 if wifiSSID != "" and wifiType != "":
 	if wifiPSK == "" or wifiType == "Open (no password)":
@@ -54,10 +55,11 @@ time.sleep(5)
 os.system("systemctl restart dhcpcd")
 time.sleep(5)
 
-# It's likely that the block following this one will be one that uses the
-# internet - such as a download file or apt-get block. It takes a few seconds
-# for the WiFi to connect and obtain an IP address, run the waitForNetwork shell
-# script, which will loop waiting for a network connection (timeout 150 seconds)
-# and continue once there is one
-os.system("chmod +x /boot/PiBakery/blocks/wifisetup/waitForNetwork.sh")
-os.system("/boot/PiBakery/blocks/wifisetup/waitForNetwork.sh")
+if waitForNetwork == "Yes":
+	# It's likely that the block following this one will be one that uses the
+	# internet - such as a download file or apt-get block. It takes a few seconds
+	# for the WiFi to connect and obtain an IP address, run the waitForNetwork shell
+	# script, which will loop waiting for a network connection (timeout 200 seconds)
+	# and continue once there is one
+	os.system("chmod +x /boot/PiBakery/blocks/waitfornetwork/waitfornetwork.sh")
+	os.system("/boot/PiBakery/blocks/waitfornetwork/waitfornetwork.sh")

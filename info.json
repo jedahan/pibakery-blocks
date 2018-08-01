@@ -1,7 +1,7 @@
 {
-  "version": 3.7,
-  "compressedMD5": "10d9cff09589766cfa2f2fde53ff142a",
-  "downloadUrl": "https://github.com/jedahan/pibakery-blocks/releases/download/v0.3.7/pibakery-blocks.zip",
+  "version": 3.8,
+  "compressedMD5": "c14534b02bb337ed51b8a16d138e9a4f",
+  "downloadUrl": "https://github.com/jedahan/pibakery-blocks/releases/download/v0.3.8/pibakery-blocks.zip",
   "loadOrder": [
     "vncenable",
     "packageinstall",
@@ -26,6 +26,7 @@
     "runcommand",
     "runpython",
     "deletefile",
+    "waitfornetwork",
     "reboot",
     "shutdown"
   ]

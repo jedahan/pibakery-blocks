@@ -1,21 +1,22 @@
 {
 	"name": "waitfornetwork",
-	"text": "Wait for network on boot? %1",
+	"text": "Wait until network can ping %1",
 	"script": "waitfornetwork.sh",
 	"args": [
 		{
-			"type": "menu",
-			"options": ["Yes", "No"]
+			"type": "text",
+			"default": "8.8.8.8",
+			"maxLength": 0
 		}
 	],
 	"network": false,
 	"continue": true,
-	"type": "setting",
-	"category":"setting",
+	"type": "network",
+	"category":"network",
 	"supportedOperatingSystems": [
 		"raspbian-pibakery.img",
 		"raspbian-lite-pibakery.img"
 	],
-	"shortDescription":"Change Wait for Network setting",
-	"longDescription":"By default, the pi will not wait for a network connection when booting. You may want to enable this setting if you rely on network mounted drives, or other network services."
+	"shortDescription":"Wait until we have internet before continuing",
+	"longDescription":"Wait until we have internet before moving on to blocks after this one. By default this is run after wifi setup, but if you have manual network setup steps, you may want to run this block yourself. Checks to ping whatever ip address you want."
 }
