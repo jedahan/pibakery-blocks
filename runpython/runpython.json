@@ -1,6 +1,6 @@
 {
 	"name": "runpython",
-	"text": "Run Python file: %1\\nAs user: %2",
+	"text": "Run python file %1\\nAs user %2",
 	"script": "runPython.sh",
 	"args": [
 		{

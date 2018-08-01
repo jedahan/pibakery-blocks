@@ -1,7 +1,7 @@
 {
-  "version": 3.9,
-  "compressedMD5": "80873a447d47f173adfbe68d5671c9b8",
-  "downloadUrl": "https://github.com/jedahan/pibakery-blocks/releases/download/v0.3.9/pibakery-blocks.zip",
+  "version": 3.10,
+  "compressedMD5": "40d6713400b35f498ee668243fc94413",
+  "downloadUrl": "https://github.com/jedahan/pibakery-blocks/releases/download/v0.3.10/pibakery-blocks.zip",
   "loadOrder": [
     "vncenable",
     "packageinstall",

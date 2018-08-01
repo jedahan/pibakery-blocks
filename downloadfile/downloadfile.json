@@ -1,6 +1,6 @@
 {
 	"name": "downloadfile",
-	"text": "Download file: %1\\nSave to: %2\\nRequires internet connection",
+	"text": "Download file %1\\nSave to %2",
 	"script": "downloadFile.sh",
 	"args": [
 		{

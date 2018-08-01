@@ -1,6 +1,6 @@
 {
 	"name": "runcommand",
-	"text": "Run Command: %1\\nAs user: %2",
+	"text": "Run command %1\\nAs user %2",
 	"script": "runCommand.sh",
 	"args": [
 		{

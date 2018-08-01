@@ -1,6 +1,6 @@
 {
 	"name": "vncenable",
-	"text": "%1 VNC Server at Boot",
+	"text": "%1 VNC server at boot",
 	"script": "vncenable.sh",
 	"args": [
 		{

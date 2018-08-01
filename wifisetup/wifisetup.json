@@ -1,6 +1,6 @@
 {
 	"name": "wifisetup",
-	"text": "Setup WiFi\\nNetwork: %1\\nPass: %2\\nType: %3\\nCountry (ISO 3166): %4\\nWait for Network: %5",
+	"text": "Setup WiFi\\nNetwork %1\\nPassword %2\\nType %3\\nCountry (ISO 3166) %4\\nWait for connection? %5",
 	"script": "wifiConnect.py",
 	"args": [
 		{
